@@ -134,4 +134,10 @@
 {{ end}}
 {{ end}}
 
+<!-- Partners -->
+{{ if $data.homepage.partner.enable }}
+{{ partial "partner.html" . }}
+{{ end }}
+<!-- /partner -->
+
 {{ end }}

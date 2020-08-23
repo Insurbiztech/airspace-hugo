@@ -1,0 +1,28 @@
+.partner-list{
+	padding: 70px 0px;
+	text-align: center;
+	h2{
+		color:$light;
+	}
+	p{
+		color:$light;
+	}
+	.btn-main{
+		padding: 15px 35px;
+		font-size: 12px;
+		margin-top: 30px;
+	}
+	.slick-slide{
+		margin: 40px;
+	}
+	.slick-slide img{
+		width: 100%;
+		border: 2px solid #fff;
+	}
+	.slick-initialized .slick-track {
+		display: flex;
+		align-items: center;
+	}
+}
+
+

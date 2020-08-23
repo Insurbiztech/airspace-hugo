@@ -1,0 +1,26 @@
+{{ $data := index site.Data site.Language.Lang }}
+{{ with $data.homepage.partner }}
+<section class="partner-list bg-1 section-sm overly" style="background-image: url('{{.bg_image | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>{{ .title | markdownify }}</h2>
+          <p>{{ .content | markdownify }}</p>
+
+          <div class="partner-carousel">
+            <div class="partner-slider owl-carousel">
+              {{ range .partner_slider }}
+              <div class="image">
+                <img src="{{ .image | relURL }}" alt="{{ .name }}">
+              </div>
+              {{ end }}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

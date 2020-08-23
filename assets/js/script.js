@@ -46,6 +46,18 @@ $(document).ready(function () {
 		autoplaySpeed: 2000
 	});
 
+	$('.partner-slider').slick({
+		slidesToShow: 3,
+		infinite: true,
+		centerMode: true,
+		arrows: true,
+		dots: true,
+		autoplay: true,
+		adaptiveHeight: true,
+		variableWidth: true,
+		autoplaySpeed: 2000
+	});
+
 
 	// Magnific Popup Image
 	$('.portfolio-popup').magnificPopup({
